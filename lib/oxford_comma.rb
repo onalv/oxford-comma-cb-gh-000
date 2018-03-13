@@ -8,16 +8,4 @@ def oxford_comma(array)
     array.pop
     final_array = array.join(", ") + last_item
   end
-
-  return array.join(", ")
-  
-  rest_array = array
-  
-  if array.size == 2
-    final_array = array.join(" and ")
-  else 
-    oxford_comma(array)
-  end
-  # array.join(", ")
-  return final_array
 end
